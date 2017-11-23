@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">Valentuna</string>
+  <string name="drawer_open">Open</string>
+  <string name="drawer_close">Close</string>
+  <string name="menu_refresh">Refresh</string>
+  <string name="label1">IP Device Address</string>
+  <string name="dialog_ok">OK</string>
+  <string name="dialog_login">Login</string>
+  <string name="dialog_cancel">Cancel</string>
+  <string name="list_dialog_title">Searching Devices</string>
+  <string name="login_success">Login Success</string>
+  <string name="login_failed">Login Failed</string>
+</resources>

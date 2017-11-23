@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="300dp"
+    android:minHeight="400dp">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/CamIPAddresstxt"
+        android:hint="IP Address"
+        android:paddingTop="20dp"
+        android:layout_marginLeft="24.5dp"
+        android:layout_marginRight="24.5dp"
+        android:inputType="text" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/CamIPPorttxt"
+        android:layout_below="@+id/CamIPAddresstxt"
+        android:paddingTop="20dp"
+        android:hint="Port"
+        android:layout_marginLeft="24.5dp"
+        android:layout_marginRight="24.5dp"
+        android:inputType="number" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/CamUsernametxt"
+        android:hint="Username(Camera)"
+        android:layout_below="@+id/CamIPPorttxt"
+        android:paddingTop="20dp"
+        android:layout_marginLeft="24.5dp"
+        android:layout_marginRight="24.5dp"
+        android:inputType="text" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/CamPasswordtxt"
+        android:layout_below="@+id/CamUsernametxt"
+        android:paddingTop="20dp"
+        android:hint="Password(Camera)"
+        android:layout_marginLeft="24.0dp"
+        android:layout_marginRight="24.5dp"
+        android:inputType="textPassword" />
+</RelativeLayout>

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/relativeLayoutsub1">
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/CamIPAddresstxt"
+                android:hint="IP Address"
+                android:layout_height="53.5dp"
+                android:paddingTop="20dp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/CamIPPorttxt"
+                android:layout_below="@+id/CamIPAddresstxt"
+                android:paddingTop="20dp"
+                android:hint="Port" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/relativeLayoutsub2"
+            android:layout_below="@+id/relativeLayoutsub1">
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/CamUsernametxt"
+                android:hint="Username(Camera)"
+                android:layout_height="53.5dp"
+                android:paddingTop="20dp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/CamPasswordtxt"
+                android:layout_below="@+id/CamUsernametxt"
+                android:paddingTop="20dp"
+                android:hint="Password(Camera)" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/relativeLayoutsub3"
+            android:layout_below="@+id/relativeLayoutsub2">
+            <Button
+                android:layout_width="152.5dp"
+                android:layout_height="match_parent"
+                android:layout_below="@id/CamPasswordtxt"
+                android:text="Login"
+                android:id="@+id/CamLoginbtn" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/relativeLayoutsub1">
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/CamIPAddresstxt"
+                android:hint="IP Address"
+                android:layout_height="53.5dp"
+                android:paddingTop="20dp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/CamIPPorttxt"
+                android:layout_below="@+id/CamIPAddresstxt"
+                android:paddingTop="20dp"
+                android:hint="Port" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/relativeLayoutsub2"
+            android:layout_below="@+id/relativeLayoutsub1">
+            <EditText
+                android:layout_width="match_parent"
+                android:id="@+id/CamUsernametxt"
+                android:hint="Username(Camera)"
+                android:layout_height="53.5dp"
+                android:paddingTop="20dp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/CamPasswordtxt"
+                android:layout_below="@+id/CamUsernametxt"
+                android:paddingTop="20dp"
+                android:hint="Password(Camera)" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/relativeLayoutsub3"
+            android:layout_below="@+id/relativeLayoutsub2">
+            <Button
+                android:layout_width="152.5dp"
+                android:layout_height="match_parent"
+                android:layout_below="@id/CamPasswordtxt"
+                android:text="Login"
+                android:id="@+id/CamLoginbtn" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>
