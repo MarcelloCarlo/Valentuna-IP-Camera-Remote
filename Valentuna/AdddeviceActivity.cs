@@ -28,17 +28,6 @@ namespace Valentuna
         {
             base.OnCreate(savedInstanceState);
 
-            /*etContentView(Resource.Layout.DevHomeFrag);*/
-
-
-            //var listDialogButton = FindViewById<Button>(Resource.Id.btnAutoDiscoverDevice);
-            //listDialogButton.Click += delegate { ShowDialog(AutoDiscoverDialog); };
-
-            //var addDeviceManualButton = FindViewById<Button>(Resource.Id.btnAddDeviceManual);
-            //addDeviceManualButton.Click += delegate { ShowDialog(DeviceManualDialog); };
-
-            //CamLoginbtn = FindViewById<Button>(Resource.Id.CamLoginbtn);
-
             int pos = Intent.GetIntExtra("buttonClicked",0);
             if (pos == 1)
             {
@@ -87,6 +76,7 @@ namespace Valentuna
         }
         private void OkClicked(object sender, DialogClickEventArgs args)
         {
+
             var dialog = (Android.Support.V7.App.AlertDialog)sender;
             CamIPAddresstxt = (EditText)dialog.FindViewById(Resource.Id.CamIPAddresstxt);
             CamIPPorttxt = (EditText)dialog.FindViewById(Resource.Id.CamIPPorttxt);
@@ -96,6 +86,7 @@ namespace Valentuna
             if (null != Convert.ToString(CamIPAddresstxt.Text) || null != Convert.ToString(CamIPPorttxt.Text) || null != Convert.ToString(CamUsernametxt.Text) || null != Convert.ToString(CamPasswordtxt.Text))
             {
                 Toast.MakeText(this, Resource.String.login_success, ToastLength.Short).Show();
+                
                 //var myExhibitHistoryActivity = new Intent(Activity, typeof(LivePlay));
                 //StartActivity(LivePlay);
             }
@@ -103,10 +94,10 @@ namespace Valentuna
             {
                 Toast.MakeText(this, Resource.String.login_failed, ToastLength.Short).Show();
             }
-                //Toast.MakeText(this, (username != null ?
-                //    string.Format("Username: {0} ", username.Text) : "") +
-                //    (password != null ? string.Format("Password: {0}", password.Text) : ""), ToastLength.Short).Show();
-
+            //Toast.MakeText(this, (username != null ?
+            //    string.Format("Username: {0} ", username.Text) : "") +
+            //    (password != null ? string.Format("Password: {0}", password.Text) : ""), ToastLength.Short).Show();
+            
         }
 
         private void CancelClicked(object sender, DialogClickEventArgs args)
