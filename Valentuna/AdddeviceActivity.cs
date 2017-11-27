@@ -78,12 +78,12 @@ namespace Valentuna
         {
 
             var dialog = (Android.Support.V7.App.AlertDialog)sender;
-            CamIPAddresstxt = (EditText)dialog.FindViewById(Resource.Id.CamIPAddresstxt);
-            CamIPPorttxt = (EditText)dialog.FindViewById(Resource.Id.CamIPPorttxt);
-            CamUsernametxt = (EditText)dialog.FindViewById(Resource.Id.CamUsernametxt);
-            CamPasswordtxt = (EditText)dialog.FindViewById(Resource.Id.CamPasswordtxt);
+            CamIPAddresstxt = dialog.FindViewById<EditText>(Resource.Id.CamIPAddresstxt);
+            CamIPPorttxt = dialog.FindViewById<EditText>(Resource.Id.CamIPPorttxt);
+            CamUsernametxt = dialog.FindViewById<EditText>(Resource.Id.CamUsernametxt);
+            CamPasswordtxt = dialog.FindViewById<EditText>(Resource.Id.CamPasswordtxt);
 
-            if (null != Convert.ToString(CamIPAddresstxt.Text) || null != Convert.ToString(CamIPPorttxt.Text) || null != Convert.ToString(CamUsernametxt.Text) || null != Convert.ToString(CamPasswordtxt.Text))
+            if (String.IsNullOrWhiteSpace(CamIPAddresstxt.Text) || String.IsNullOrWhiteSpace(CamIPPorttxt.Text) ||String.IsNullOrWhiteSpace(CamUsernametxt.Text) || String.IsNullOrWhiteSpace(CamPasswordtxt.Text))
             {
                 Toast.MakeText(this, Resource.String.login_success, ToastLength.Short).Show();
                 

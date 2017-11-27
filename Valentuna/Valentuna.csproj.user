@@ -3,7 +3,7 @@
   <PropertyGroup>
     <AndroidDesignerPreferredDevice>Nexus 4</AndroidDesignerPreferredDevice>
     <AndroidDesignerPreferredTheme>Theme.DeviceDefault</AndroidDesignerPreferredTheme>
-    <SelectedDevice>5" KitKat %284.4%29 XXHDPI Phone</SelectedDevice>
+    <SelectedDevice>Android_Accelerated_Nougat</SelectedDevice>
     <DefaultDevice>5" KitKat %284.4%29 XXHDPI Phone</DefaultDevice>
   </PropertyGroup>
 </Project>
