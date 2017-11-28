@@ -69,7 +69,10 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.EnterpriseServices" />
     <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Xml" />
     <Reference Include="Xamarin.Android.Support.Animated.Vector.Drawable, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -122,6 +125,11 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SQLite.cs" />
     <Compile Include="SQLiteAsync.cs" />
+    <Compile Include="Web References\OnvifMedia10\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />
@@ -147,6 +155,113 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\AddDeviceManualDialog.axml" />
+    <None Include="Web References\OnvifMedia10\AudioDecoderConfiguration.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\OnvifMedia10\AudioDecoderConfigurationOptions.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\OnvifMedia10\AudioEncoderConfiguration.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\OnvifMedia10\AudioEncoderConfigurationOptions.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\OnvifMedia10\AudioOutput.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\OnvifMedia10\AudioOutputConfiguration.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\OnvifMedia10\AudioOutputConfigurationOptions.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\OnvifMedia10\AudioSource.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\OnvifMedia10\AudioSourceConfiguration.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\OnvifMedia10\AudioSourceConfigurationOptions.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\OnvifMedia10\b-2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\OnvifMedia10\bf-2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\OnvifMedia10\Capabilities.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\OnvifMedia10\common.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\OnvifMedia10\include.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\OnvifMedia10\item.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\OnvifMedia10\media.wsdl" />
+    <None Include="Web References\OnvifMedia10\MediaUri.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\OnvifMedia10\MetadataConfiguration.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\OnvifMedia10\MetadataConfigurationOptions.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\OnvifMedia10\onvif.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\OnvifMedia10\OSDConfiguration.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\OnvifMedia10\OSDConfigurationOptions.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\OnvifMedia10\Profile.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\OnvifMedia10\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\OnvifMedia10\t-1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\OnvifMedia10\VideoAnalyticsConfiguration.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\OnvifMedia10\VideoEncoderConfiguration.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\OnvifMedia10\VideoEncoderConfigurationOptions.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\OnvifMedia10\VideoSource.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\OnvifMedia10\VideoSourceConfiguration.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\OnvifMedia10\VideoSourceConfigurationOptions.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\OnvifMedia10\VideoSourceMode.datasource">
+      <DependentUpon>Reference.map</DependentUpon>
+    </None>
+    <None Include="Web References\OnvifMedia10\ws-addr.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\OnvifMedia10\xml.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Web References\OnvifMedia10\xmlmime.xsd">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="Properties\AndroidManifest.xml">
@@ -154,7 +269,9 @@
     </None>
     <AndroidResource Include="Resources\values\colors.xml" />
     <AndroidResource Include="Resources\values\integers.xml" />
-    <AndroidResource Include="Resources\values\strings.xml" />
+    <AndroidResource Include="Resources\values\strings.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
     <AndroidResource Include="Resources\values\styles.xml">
       <SubType>Designer</SubType>
     </AndroidResource>
@@ -201,6 +318,24 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable-hdpi\ProgressBarStyle.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="https://www.onvif.org/onvif/ver10/media/wsdl/media.wsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\OnvifMedia10\</RelPath>
+      <UpdateFromURL>https://www.onvif.org/onvif/ver10/media/wsdl/media.wsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>
+      </CachedAppSettingsObjectName>
+      <CachedSettingsPropName>
+      </CachedSettingsPropName>
+    </WebReferenceUrl>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

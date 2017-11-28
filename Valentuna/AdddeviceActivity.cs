@@ -19,10 +19,10 @@ namespace Valentuna
     {
         private const int AutoDiscoverDialog = 1;
         private const int DeviceManualDialog = 2;
-        EditText CamIPAddresstxt;
-        EditText CamIPPorttxt;
-        EditText CamUsernametxt;
-        EditText CamPasswordtxt;
+        string IPaddr = String.Empty;
+        string IPport = String.Empty;
+        string Username = String.Empty;
+        string Password = String.Empty;
 
 		protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -78,15 +78,23 @@ namespace Valentuna
         {
 
             var dialog = (Android.Support.V7.App.AlertDialog)sender;
-            CamIPAddresstxt = dialog.FindViewById<EditText>(Resource.Id.CamIPAddresstxt);
-            CamIPPorttxt = dialog.FindViewById<EditText>(Resource.Id.CamIPPorttxt);
-            CamUsernametxt = dialog.FindViewById<EditText>(Resource.Id.CamUsernametxt);
-            CamPasswordtxt = dialog.FindViewById<EditText>(Resource.Id.CamPasswordtxt);
+            var  CamIPAddresstxt = (EditText)dialog.FindViewById(Resource.Id.CamIPAddresstxt);
+            var CamIPPorttxt = (EditText)dialog.FindViewById(Resource.Id.CamIPPorttxt);
+            var CamUsernametxt = (EditText)dialog.FindViewById(Resource.Id.CamUsernametxt);
+            var CamPasswordtxt = (EditText)dialog.FindViewById(Resource.Id.CamPasswordtxt);
+            IPaddr = CamIPAddresstxt.Text;
+            IPport = CamIPPorttxt.Text;
+            Username = CamUsernametxt.Text;
+            Password = CamPasswordtxt.Text;
 
-            if (String.IsNullOrWhiteSpace(CamIPAddresstxt.Text) || String.IsNullOrWhiteSpace(CamIPPorttxt.Text) ||String.IsNullOrWhiteSpace(CamUsernametxt.Text) || String.IsNullOrWhiteSpace(CamPasswordtxt.Text))
+            if (String.IsNullOrWhiteSpace(IPaddr) || String.IsNullOrWhiteSpace(IPport) || String.IsNullOrWhiteSpace(Username) || String.IsNullOrWhiteSpace(Password))
             {
-                Toast.MakeText(this, Resource.String.login_success, ToastLength.Short).Show();
-                
+                //Toast.MakeText(this, Resource.String.login_success, ToastLength.Short).Show();
+
+                Toast.MakeText(this,
+                    string.Format("Username: {0} ", IPaddr)  +
+                   string.Format("Password: {0}", IPport), ToastLength.Short).Show();
+
                 //var myExhibitHistoryActivity = new Intent(Activity, typeof(LivePlay));
                 //StartActivity(LivePlay);
             }
