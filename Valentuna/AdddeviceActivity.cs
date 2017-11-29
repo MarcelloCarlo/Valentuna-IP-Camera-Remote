@@ -89,12 +89,8 @@ namespace Valentuna
 
             if (String.IsNullOrWhiteSpace(IPaddr) || String.IsNullOrWhiteSpace(IPport) || String.IsNullOrWhiteSpace(Username) || String.IsNullOrWhiteSpace(Password))
             {
-                //Toast.MakeText(this, Resource.String.login_success, ToastLength.Short).Show();
-
-                Toast.MakeText(this,
-                    string.Format("Username: {0} ", IPaddr)  +
-                   string.Format("Password: {0}", IPport), ToastLength.Short).Show();
-
+                Toast.MakeText(this, Resource.String.login_success, ToastLength.Short).Show();
+                StartActivity(typeof(LivePlay));
                 //var myExhibitHistoryActivity = new Intent(Activity, typeof(LivePlay));
                 //StartActivity(LivePlay);
             }
